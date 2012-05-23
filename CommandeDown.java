@@ -20,17 +20,17 @@ public class CommandeDown implements Commande_I
 		{
 		sir.down();
 		}
+
 	@Override
 	public void undo()
 		{
 		sir.up();
 
 		}
+
 	/*------------------------------------------------------------------*\
 	|*							Attributs Private						*|
 	\*------------------------------------------------------------------*/
 	private Sir sir;
-
-
 
 	}

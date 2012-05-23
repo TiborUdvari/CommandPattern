@@ -4,8 +4,6 @@ package ro.udvari.Command;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-
-
 public class CommandeKeyListener implements KeyListener
 	{
 	public CommandeKeyListener(char targetKey, Commande_I commande, JPanelPlayingField field)
@@ -31,14 +29,12 @@ public class CommandeKeyListener implements KeyListener
 	@Override
 	public void keyReleased(KeyEvent e)
 		{
-		// TODO Auto-generated method stub
 
 		}
 
 	@Override
 	public void keyTyped(KeyEvent e)
 		{
-		// TODO Auto-generated method stub
 
 		}
 

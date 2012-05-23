@@ -11,10 +11,11 @@ import javax.swing.JButton;
  */
 public class CommandeButton extends JButton
 	{
+
 	/*------------------------------------------------------------------*\
 	|*							Constructeurs							*|
 	\*------------------------------------------------------------------*/
-	public CommandeButton(String text,Commande_I commande, JPanelPlayingField field)
+	public CommandeButton(String text, Commande_I commande, JPanelPlayingField field)
 		{
 		setText(text);
 		this.commande = commande;
@@ -31,21 +32,21 @@ public class CommandeButton extends JButton
 		{
 		addActionListener(new ActionListener()
 			{
+
 				@Override
 				public void actionPerformed(ActionEvent e)
 					{
 					commande.execute();
 					field.repaint();
 					CommandeHistory.getInstance().getStackCommandes().push(commande);
-					System.out.println(CommandeHistory.getInstance().getStackCommandes());
 					}
 			});
 
 		}
+
 	/*------------------------------------------------------------------*\
 	|*							Attributs Private						*|
 	\*------------------------------------------------------------------*/
 	private Commande_I commande;
 	private JPanelPlayingField field;
 	}
-

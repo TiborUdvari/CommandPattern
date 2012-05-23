@@ -1,8 +1,6 @@
 
 package ro.udvari.Command;
 
-
-
 public class CommandeRight implements Commande_I
 	{
 
@@ -14,6 +12,7 @@ public class CommandeRight implements Commande_I
 		{
 		this.sir = sir;
 		}
+
 	/*------------------------------------------------------------------*\
 	|*							Methodes Public							*|
 	\*------------------------------------------------------------------*/
@@ -29,12 +28,10 @@ public class CommandeRight implements Commande_I
 		sir.left();
 
 		}
+
 	/*------------------------------------------------------------------*\
 	|*							Attributs Private						*|
 	\*------------------------------------------------------------------*/
 	private Sir sir;
 
-
-
 	}
-

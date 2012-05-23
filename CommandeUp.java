@@ -1,8 +1,6 @@
 
 package ro.udvari.Command;
 
-
-
 public class CommandeUp implements Commande_I
 	{
 
@@ -28,11 +26,10 @@ public class CommandeUp implements Commande_I
 		{
 		sir.down();
 		}
+
 	/*------------------------------------------------------------------*\
 	|*							Attributs Private						*|
 	\*------------------------------------------------------------------*/
 	private Sir sir;
 
-
 	}
-

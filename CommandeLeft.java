@@ -20,17 +20,17 @@ public class CommandeLeft implements Commande_I
 		{
 		sir.left();
 		}
+
 	@Override
 	public void undo()
 		{
 		sir.right();
 
 		}
+
 	/*------------------------------------------------------------------*\
 	|*							Attributs Private						*|
 	\*------------------------------------------------------------------*/
 	private Sir sir;
-
-
 
 	}

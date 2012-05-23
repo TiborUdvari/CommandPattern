@@ -44,8 +44,6 @@ public class JFrameMain extends JFrame
 		addKeyListener(new CommandeKeyListener('a', new CommandeLeft(sir), jPanelPlayingField));
 		addKeyListener(new CommandeKeyListener('d', new CommandeRight(sir), jPanelPlayingField));
 
-		Thread thread = new Thread(new VoiceController(sir, jPanelPlayingField));
-		thread.start();
 		}
 
 	private void setPropriete()
@@ -54,20 +52,14 @@ public class JFrameMain extends JFrame
 		setTitle("Command Design Pattern Demo");
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setFocusable(true);
+		requestFocus();
 		setVisible(true);
 		}
-
 	/*------------------------------------------------------------------*\
 	|*							Attributs Private						*|
 	\*------------------------------------------------------------------*/
 
-	public Sir getSir()
-		{
-		return sir;
-		}
-
 	private JPanelPlayingField jPanelPlayingField;
 	private JPanelButtons jFrameButtons;
 	private Sir sir;
-	private VoiceController voiceController;
 	}
